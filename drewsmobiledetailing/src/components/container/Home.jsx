@@ -71,7 +71,10 @@ const Home = () => {
                 <BsFillTelephoneFill className="text-primary" />
                 (239)- 300- 1782
               </a>
-              <a href="" className="hover:scale-110 text-xl">
+              <a
+                href="https://www.facebook.com/DrewsMobileDetailing8/"
+                className="hover:scale-110 text-xl"
+              >
                 <BsFacebook />
               </a>
               <a href="" className="hover:scale-110 text-xl">

@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Accordion = ({ id, title, content }) => {
   const [activeIndex, setActiveIndex] = useState(null);
-  
+
   const handleClick = (id) => {
     setActiveIndex(id === activeIndex ? null : id);
   };
-  
+
   return (
     <div className="pb-8">
       <div className="flex items-center justify-between">
@@ -23,21 +23,19 @@ const Accordion = ({ id, title, content }) => {
       <AnimatePresence>
         {id === activeIndex && (
           <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
             style={{ overflow: "hidden" }}
             className="pt-4"
           >
-            <p className="text-sm leading-7 text-gray">{content}</p>
+            <div className="text-sm leading-7 text-gray">{content}</div>
           </motion.div>
         )}
       </AnimatePresence>
-    
     </div>
   );
 };
 
 export default Accordion;
-
