@@ -38,7 +38,7 @@ const Footer = () => {
               className="text-white hover:scale-110 flex place-items-center gap-2"
             >
               <BsFillTelephoneFill />
-              (239)- 300- 1782
+              (239)-300-1782
             </a>
             <a
               href="https://www.facebook.com/DrewsMobileDetailing8/"

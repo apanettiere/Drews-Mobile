@@ -23,8 +23,7 @@ const InstagramGallery = () => {
   };
 
   useEffect(() => {
-    const accessToken =
-      "IGQVJXcUotX19xTTQwb1dEMzVULWN2eEZAQV2ppeE1WN2tXLVZA4WWFncUZAoYVNIX2dvdTduSjNPV05uakJRU3B1b1RnM0JlR1Rsc1RwZAnF0OTNfV0l3ZA0FLYldMOTRqVEstM1Q0TnhYbzJ5NVlwOGw4dwZDZD";
+    const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
     const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=${initialCount}&access_token=${accessToken}`;
     fetchPhotos(url);
   }, []);

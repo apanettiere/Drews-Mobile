@@ -46,7 +46,7 @@ const Navbar = () => {
               className="text-white hover:scale-110 flex place-items-center gap-2"
             >
               <BsFillTelephoneFill className="" />
-              (239)- 300- 1782
+              (239)-300-1782
             </a>
           </div>
 
